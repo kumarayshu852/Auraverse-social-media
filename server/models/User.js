@@ -7,7 +7,7 @@ const userSchema =new mongoose.Schema({
     full_name:{type:String,require:true},
     username:{type:String, unique:true},
     bio:{type:String,default:"Hey there ! I am using Auraverse."},
-    Profile_picture:{type:String, default:""},
+    profile_picture:{type:String, default:""},
     cover_photo:{type:String,default:""},
     location:[{type:String,ref:""}],
     followers:[{type:String,ref:"User"}],
